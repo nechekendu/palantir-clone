@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./medkit.svg" type="image/png" sizes="26x36" >
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Home Palantir</title>
+</head>
+<body id="home" class="home">
+
+    <!-- Header begins -->
+    <div class="wrapper">
+        <div class="badge">
+            <p>
+                <a href="#" id="badge-link">Click here, to learn all you need to know about COVID-19</a>
+            </p>
+        </div>
+        
+        <header id="site-header" class="sticky">
+            <nav class="navbar" role="navigation">
+                <!-- VIDEO HERE -->
+                <div class="fullscreen-video-wrap">
+                    <video autoplay loop muted id="mp4" src="https://cdn.videvo.net/videvo_files/video/free/2014-01/small_watermarked/Human_Medical_Background_1_Videvo_preview.webm" autoplay="" loop="">
+                  </video>
+                  </div>
+                  <!-- VIDEO ENDS HERE -->
+                  <div class="header-overlay"></div>
+          
+                  
+                                <!-- NAVBAR BEGINS HERE -->
+                  <div class="container-fluid">
+                   <div class="navbar-header">
+                       <h1 class="logo">
+                           <a href="/">
+                            <div id="logo-svg">
+                                <svg width="100" height="25" xmlns="./medkit.svg">
+                                    <path d="M24.4,3h6.2c2.3,0,3.8,0.1,5.1,1.5c0.9,1,1.4,2.2,1.4,3.6c0,1.4-0.5,2.6-1.5,3.6c-1,1-2.3,1.6-5.6,1.6h-3 v8.3h-2.6V3z M27,11.2H30c1.7,0,4.3-0.1,4.3-3.2c0-2.9-2.4-2.9-3.8-2.9H27V11.2z M45.4,21.6c-0.2-0.6-0.2-1.3-0.2-1.9 c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9 c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9 c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H45.4z M43.7,15.2c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2 c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C44.7,15.3,44.3,15.2,43.7,15.2z M49.6,3H52v18.6h-2.4V3z M62.4,21.6 c-0.2-0.6-0.2-1.3-0.2-1.9c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8 c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4 c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H62.4z M60.8,15.2 c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C61.7,15.3,61.4,15.2,60.8,15.2z M66.7,10.2l0-1.5h2.4l0,2.1c0.3-0.5,1.2-2.3,4.1-2.3c1.2,0,4.7,0.4,4.7,4.4v8.8h-2.5v-8.2c0-0.8-0.1-1.6-0.7-2.2 c-0.6-0.6-1.5-0.9-2.3-0.9c-1.8,0-3.4,1.3-3.4,3.9v7.4h-2.4V10.2z M78.7,8.7H81V5.9l2.4-0.8v3.5h2.9v1.8h-2.9v7.7 c0,0.6,0,1.7,1.7,1.7c0.5,0,1-0.1,1.2-0.1v1.9c-0.4,0.1-1.1,0.2-2,0.2C82,21.8,81,21.1,81,19v-8.6h-2.3V8.7z M88,3h2.9v2.7H88V3z M88.2,8.7h2.4v12.9h-2.4V8.7z M92.9,11.3c0-0.9-0.1-1.8-0.1-2.6h2.4l0.1,2.5c0.5-1.8,2-2.4,3.1-2.5c0.7-0.1,1.3-0.1,1.7-0.1v2.4 c-0.1,0-0.3-0.1-0.5-0.1c-0.2,0-0.4,0-0.7,0c-2.9,0-3.5,1.7-3.5,3.9v6.9h-2.4V11.3z M9.5,0.5c-5,0-9.1,4.1-9.1,9.1s4.1,9.1,9.1,9.1 c5,0,9.1-4.1,9.1-9.1S14.5,0.5,9.5,0.5z M9.5,15.9c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3 C15.7,13.1,12.9,15.9,9.5,15.9z M17.6,17.9l-8.1,3.5l-8.1-3.5L0,20.4l9.5,4l9.5-4L17.6,17.9z"/></svg>
+                            </div>
+                        </a>
+                       </h1>
+
+                   </div>
+                   <label for="toggle">&#9776;</label>
+                   <input type="checkbox" id="toggle">
+                       <div class="flex justify-between menu" id="main-navbar">
+                       <ul class="nav navbar-nav flex">
+                        <li>
+                            <a href="#">Products</a>
+                            <!-- <ul class="dropdown-menu">
+                              <li><a href="#">Palantir Gotham</a></li>
+                              <li><a href="#">Palantir Foundry</a></li>
+                              <li><a href="#">Palantir Apollo</a></li>
+                            </ul> -->
+                          </li>
+                          <li><a href="/">Solutions</a>
+                            <!-- <ul class="dropdown-menu split-menu">
+                              
+                              <li><a href="/" title="AI & ML">AI & ML</a></li>
+                              
+                              <li><a href="/" title="Automotive">Automotive</a></li>
+                              
+                              <li><a href="/" title="Auto Racing">Auto Racing</a></li>
+                              
+                              <li><a href="/" title="Case Management">Case Management</a></li>
+                              
+                              <li><a href="/" title="Cyber">Cyber</a></li>
+                              
+                              <li><a href="/" title="Defense">Defense</a></li>
+                              
+                              <li><a href="/" title="Financial Compliance">Financial Compliance</a></li>
+                              
+                              <li><a href="/" title="GDPR">GDPR</a></li>
+                              
+                              <li><a href="/" title="Insurance">Insurance</a></li>
+                              
+                              <li><a href="/" title="Intelligence">Intelligence</a></li>
+                              
+                              <li><a href="/" title="Law Enforcement">Law Enforcement</a></li>
+                              
+                              <li><a href="/" title="Legal Intelligence">Legal Intelligence</a></li>
+                              
+                              <li><a href="/" title="Manufacturing">Manufacturing</a></li>
+                              
+                              <li><a href="/" title="Mergers &amp; Acquisitions">Mergers &amp; Acquisitions</a></li>
+                              
+                              <li><a href="/" title="Pharma&#58; RWE">Pharma&#58; RWE</a></li>
+                              
+                              <li><a href="/" title="Sales and Revenue">Sales and Revenue</a></li>
+                              
+                              <li><a href="/" title="Skywise">Skywise</a></li>
+                              
+                            </ul> -->
+                          </li>
+                          <li>
+                            <a href="/careers/">Careers</a>
+                            <!-- <ul class="dropdown-menu">
+                              
+                              <li><a href="/engineering-culture/" title="Engineering Culture">Engineering Culture</a></li>
+                              
+                              <li><a href="/getting-hired/" title="Getting Hired">Getting Hired</a></li>
+                              
+                              <li><a href="/students/" title="Students">Students</a></li>
+                              
+                              <li><a href="/students/scholarship/" title="Scholarships">Scholarships</a></li>
+                              
+                              <li><a href="/careers/" title="Explore Careers">Explore Careers</a></li>
+                              
+                            </ul> -->
+                          </li>
+                          <li>
+                            <a href="about.html">About</a>
+                            <!-- <ul class="dropdown-menu">
+                              
+                              <li><a href="/pcl/">Privacy &amp; Civil Liberties</a></li>
+                              
+                              <li><a href="/life-at-palantir/">Life at Palantir</a></li>
+                              
+                              <li><a href="/philanthropy-engineering/">Philanthropy Engineering</a></li>
+                              
+                              <li><a href="/information-security/">Information Security</a></li>
+                              
+                              <li><a href="https://investors.palantir.com/home/default.aspx" target="_blank">Investor Relations</a></li>
+                              
+                            </ul> -->
+                          </li>
+                          <li>
+                            <a href="/newsroom/">Contact</a>
+                            <!-- <ul class="dropdown-menu">
+                              
+                              <li><a href="/media/">Media</a></li>
+                              
+                              <li><a href="/press-releases/">Press Releases</a></li>
+                              
+                              <li><a href="https://medium.com/palantir">Blog</a></li>
+                              
+                            </ul> -->
+                          </li>
+                          <li>
+                            <a href="/careers/">Careers</a>
+                            <!-- <ul class="dropdown-menu">
+                              
+                              <li><a href="/engineering-culture/" title="Engineering Culture">Engineering Culture</a></li>
+                              
+                              <li><a href="/getting-hired/" title="Getting Hired">Getting Hired</a></li>
+                              
+                              <li><a href="/students/" title="Students">Students</a></li>
+                              
+                              <li><a href="/students/scholarship/" title="Scholarships">Scholarships</a></li>
+                              
+                              <li><a href="/careers/" title="Explore Careers">Explore Careers</a></li>
+                              
+                            </ul> -->
+                          </li>
+                          <li>
+                            <a href="about.html">About</a>
+
+                          </li>
+                          
+                        </ul>
+                        
+                    </div><!-- navbar collapse -->
+
+                  
+                </div>    <!--  container fluid -->
+            </nav>
+        </header>  <!--  header -->
+
+
+        <main>
+              <!-- VIDEO CONTENT  -->
+              <div class="row block block-hero">
+                <div class="col-sm-10 col-sm-offset-1">
+                  <h1 class="hero__title">Powered by Apollo.</h1>
+                  
+                  <p class="hero__subtitle">Take what you need. Build on what <br> you have. In hours.</p>
+                  
+                  
+                  <ul class="hero__list">
+                    
+                    <li class="hero__list-item">Now fully modular</li>   <!--  <ion-icon name="checkmark-done-circle"></ion-icon> -->
+                    
+                    <li class="hero__list-item hero__list-item_cta"><a href="/products/" class="hero__cta">Learn more</a></li>  <!--  <ion-icon name="arrow-forward"></ion-icon> -->
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+              <!-- VIDEO CONTENT ENDS -->
+
+            <article>
+
+                <!-- First Section Begins -->
+              <section class="content">
+                <div class="content-container">
+                  <div class="content-row">
+                    <div class="col-sm-10 col-sm-offset-2">
+                      
+                      <header>
+                        <h2 class="title">Power Real-Time Decisions</h2>
+                      </header>
+                      
+                      <p>Institutions have the data they need to make the best decisions for safety, stability, and prosperity. But too often, their data is fragmented and locked in silos. The people on the front lines of our most important problems don’t have the information they need when they need&nbsp;it&nbsp;most.</p>
+                      <br>
+          <p>At Palantir, we build software that lets organizations integrate their data, their decisions, and their operations into one platform. Our software empowers entire organizations to answer complex questions quickly by bringing the right data to the people who&nbsp;need&nbsp;it.</p>
+          
+                    </div>
+                  </div>
+                </div>
+              </section>
+               <!-- First Section Ends -->
+
+                <!-- Second Section Begins -->
+                
+                <section class="content">
+                    <hr>
+                    <div class="content-container">
+                      <div class="content-row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                          
+                          <header>
+                            <h2 class="title">Protect Privacy</h2>
+                          </header>
+                          
+                          <p>Palantir was founded on the conviction that it's essential to preserve fundamental principles of privacy and civil liberties while using data. From our roots in counterterrorism to our current work spanning the public, private, and non-profit sectors, we've delivered software that incorporates principles of privacy&nbsp;by&nbsp;design.</p>
+                          <br>
+              <p><a class="button_ghost" href="https://www.palantir.com/pcl/">Read more: Privacy and Civil Liberties Engineering</a></p>
+              
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Second Section Ends -->
+
+                  <!-- Third Section Begins -->
+                  <section class="content blue-content">
+                    <div class="content-container">
+                      <div class="content-row row2">
+                        <div class="col-sm-10 col-sm-offset-2">
+                          
+                          <header>
+                            <h2 class="title">Learn More</h2>
+                          </header>
+                          
+                          <p class="border"><a class="button button_ghost" href="/products">Learn how our platforms break down barriers between data and&nbsp;decisions</a></p>
+              <p class="border"><a class="button button_ghost" href="/solutions">Learn how organizations worldwide use Palantir platforms to improve how they&nbsp;operate</a></p>
+              
+                        </div>
+                      </div>
+                    </div>
+                    </section>
+                   
+                    <!-- Third Scetion Ends -->
+
+                    <!-- Fourth Section Begins -->
+                    <section class="content">
+                        <div class="content-container">
+                          <div class="content-row">
+                            <div class="col-sm-10 col-sm-offset-2">
+                              
+                              <p class="text-center"><a class="button button_cta" href="/store">Purchase Palantir Gear<span> > </span></span></a></p>
+                  
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <!-- Fourth Section Ends -->
+
+                       <!-- Latest news : start -->
+    
+    <div id="section" class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 type-centered">
+              <h3>Latest News</h3>
+            </div>
+          </div>
+  
+          <div class="row block">
+            <div class="col-sm-5 col-sm-offset-1">
+              <ul class="media-list-listing">
+              
+                <li>
+                  <a href="https://www.wsj.com/articles/palantir-to-help-u-s-track-covid-19-vaccines-11603367276">Palantir to Help U.S. Track Covid-19 Vaccines</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">Wall Street Journal</span> &mdash;
+                      
+                      <span class="media-list-item-date">October 22, 2020</span>
+                    </span>
+                </li>
+              
+                <li>
+                  <a href="https://www.nytimes.com/interactive/2020/10/21/magazine/palantir-alex-karp.html">Palantir CEO Alex Karp speaks candidly with the New York Times</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">New York Times Magazine</span> &mdash;
+                      
+                      <span class="media-list-item-date">October 21, 2020</span>
+                    </span>
+                </li>
+              
+                <li>
+                  <a href="https://www.ft.com/content/8ea36422-2f65-4a14-93be-b7b4d38362e3">The Financial Times profiles Alex Karp</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">Financial Times</span> &mdash;
+                      
+                      <span class="media-list-item-date">October 2, 2020</span>
+                    </span>
+                </li>
+              
+              </ul>
+            </div>
+  
+            <div class="col-sm-5 col-sm-offset-1">
+              <ul class="media-list-listing">
+              
+                <li>
+                  <a href="https://www.handelszeitung.ch/tech/palantir-chef-das-klima-ist-sehr-polarisiert">Palantir-Chef: «Das Klima ist sehr polarisiert»</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">Handelszeitung</span> &mdash;
+                      
+                      <span class="media-list-item-date">October 1, 2020</span>
+                    </span>
+                </li>
+              
+                <li>
+                  <a href="https://www.fedscoop.com/nih-data-enclave-covid-palantir/">NIH expanding enclave for COVID-19 data with $36M Palantir contract</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">FedScoop</span> &mdash;
+                      
+                      <span class="media-list-item-date">September 29, 2020</span>
+                    </span>
+                </li>
+              
+                <li>
+                  <a href="https://insight.wfp.org/coronavirus-world-food-programme-harnesses-data-and-tech-to-save-lives-c57c2b9e22ea">World Food Programme harnesses data and tech to save lives</a>
+                    <span class="media-list-item-meta">
+                      
+                      <span class="media-list-item-source">World Food Programme</span> &mdash;
+                      
+                      <span class="media-list-item-date">June 25, 2020</span>
+                    </span>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-12 type-centered">
+              <p>
+                <a href="/media/" class="button button-small button-white button-hover-white">Read More News</a>
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <!-- Latest news : end -->
+  
+            </article>
+        </main>
+        <!-- Main Ends Here -->
+
+ <!-- Footer -->
+ 
+ <footer class="footer">
+    <nav class="footer-inner">
+      <section class="footer-item">
+        <h1 class="logo">
+            <a href="/">
+             <div id="logo-svg">
+                 <svg width="100" height="25" xmlns="./medkit.svg">
+                     <path d="M24.4,3h6.2c2.3,0,3.8,0.1,5.1,1.5c0.9,1,1.4,2.2,1.4,3.6c0,1.4-0.5,2.6-1.5,3.6c-1,1-2.3,1.6-5.6,1.6h-3 v8.3h-2.6V3z M27,11.2H30c1.7,0,4.3-0.1,4.3-3.2c0-2.9-2.4-2.9-3.8-2.9H27V11.2z M45.4,21.6c-0.2-0.6-0.2-1.3-0.2-1.9 c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9 c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9 c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H45.4z M43.7,15.2c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2 c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C44.7,15.3,44.3,15.2,43.7,15.2z M49.6,3H52v18.6h-2.4V3z M62.4,21.6 c-0.2-0.6-0.2-1.3-0.2-1.9c-1.2,2.1-2.9,2.3-4,2.3c-3,0-4.6-1.7-4.6-3.8c0-1,0.4-2.7,2.3-3.8c1.4-0.8,3.4-0.8,4.5-0.8 c0.6,0,1,0,1.7,0.1c0-1.6,0-2.3-0.5-2.9c-0.5-0.6-1.5-0.8-2.2-0.8c-2.4,0-2.6,1.7-2.6,2.2h-2.4c0.1-0.7,0.2-1.6,0.9-2.4 c1-1.1,2.8-1.4,4.2-1.4c1.9,0,3.9,0.6,4.6,1.9c0.4,0.8,0.4,1.4,0.4,2l-0.1,6.2c0,0.2,0,1.9,0.2,3.2H62.4z M60.8,15.2 c-1,0-4.7,0-4.7,2.6c0,0.8,0.5,2.2,2.7,2.2c1.2,0,2.2-0.5,2.8-1.4c0.5-0.9,0.6-1.6,0.6-3.4C61.7,15.3,61.4,15.2,60.8,15.2z M66.7,10.2l0-1.5h2.4l0,2.1c0.3-0.5,1.2-2.3,4.1-2.3c1.2,0,4.7,0.4,4.7,4.4v8.8h-2.5v-8.2c0-0.8-0.1-1.6-0.7-2.2 c-0.6-0.6-1.5-0.9-2.3-0.9c-1.8,0-3.4,1.3-3.4,3.9v7.4h-2.4V10.2z M78.7,8.7H81V5.9l2.4-0.8v3.5h2.9v1.8h-2.9v7.7 c0,0.6,0,1.7,1.7,1.7c0.5,0,1-0.1,1.2-0.1v1.9c-0.4,0.1-1.1,0.2-2,0.2C82,21.8,81,21.1,81,19v-8.6h-2.3V8.7z M88,3h2.9v2.7H88V3z M88.2,8.7h2.4v12.9h-2.4V8.7z M92.9,11.3c0-0.9-0.1-1.8-0.1-2.6h2.4l0.1,2.5c0.5-1.8,2-2.4,3.1-2.5c0.7-0.1,1.3-0.1,1.7-0.1v2.4 c-0.1,0-0.3-0.1-0.5-0.1c-0.2,0-0.4,0-0.7,0c-2.9,0-3.5,1.7-3.5,3.9v6.9h-2.4V11.3z M9.5,0.5c-5,0-9.1,4.1-9.1,9.1s4.1,9.1,9.1,9.1 c5,0,9.1-4.1,9.1-9.1S14.5,0.5,9.5,0.5z M9.5,15.9c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3 C15.7,13.1,12.9,15.9,9.5,15.9z M17.6,17.9l-8.1,3.5l-8.1-3.5L0,20.4l9.5,4l9.5-4L17.6,17.9z"/></svg>
+             </div>
+         </a>
+        </h1>
+        
+        <h2>We create possibilities <br>for the connected world.<br><b class="color">Be Bold.</b></h2>
+      </section>
+          
+      <section class="footer-item">
+        <h3>Products</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Capabilities</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+      </section>
+            
+      <section class="footer-item">
+        <h3>Careers</h3>
+          <a href="#">
+          <p>Envoy So. California</p>
+          <p>34 Tesla, Ste 100</p>
+          <p>Irvine, Ca, USA 92618</p>
+          </a>
+              
+        <h3 class="desktop">Contact</h3>
+          <p class="desktop"><a href="#">engage@weareenvoy.com</a></p>
+          <p class="desktop"><a href="#">949.333.3106</a></p>
+      </section>
+              
+      <section class="footer-item">
+        <h3>About</h3>
+          <p><a href="#">Email us</a></p>
+          <p><a href="#">949.333.3106</a></p>
+      </section>
+          
+      <section class="footer-item">
+        <h3>Follow</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+      </section>
+          
+      <section class="footer-item">
+        <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+      </section>
+              
+      <section class="footer-item">
+          <a href="#" class="footer-button">Next: About</a>
+      </section>
+    </nav>
+  </footer>
+
+    </div>
+
+
+
+
+
+    <!-- JAVSCRIPT HERE -->
+    <script>
+        const navbar = document.getElementById('navbar-header');
+        let atTopOfPage = true;
+        // add  event listner on  browser window
+        window.addEventListener('scroll', () => {
+          if(window.pageYOffset > 50){
+            // user is scrolled
+            if(atTopOfPage) {atTopOfPage = false;}
+            console.log(atTopOfPage)
+            // atTopOfPage = false;
+            
+          }else {
+            if(!atTopOfPage) {atTopOfPage = true;}
+    
+            // atTopOfPage = true
+            console.log(atTopOfPage)
+    
+              // user is at top of page
+              // if(!atTopOfPage) atTopOfPage = true
+          }
+    
+          if(!atTopOfPage) {
+              navbar.classList.add('fixed-to-top')
+          }else {
+            navbar.classList.remove('fixed-to-top')
+    
+          }
+        });
+      </script>
+      <!-- JAVASCRIPT ENDS HERE -->
+</body>
+</html>
